@@ -1,0 +1,18 @@
+  /* Contenedor principal del carousel */
+  .carousel-container {
+    height: 40vh; /* Altura del 40% del viewport */
+    max-width: 1200px; /* Máximo ancho en pantallas grandes (ajustable) */
+    margin: 0 auto; /* Centrado horizontal */
+  }
+  /* Ajustes para el carousel y sus elementos internos */
+  .carousel-container .carousel,
+  .carousel-container .carousel-inner,
+  .carousel-container .carousel-item,
+  .carousel-container .carousel-item img {
+    height: 100%; /* Hereda la altura del contenedor */
+    width: 100%; /* Ocupa todo el ancho disponible */
+  }
+  /* Evita que las imágenes se deformen */
+  .carousel-container .carousel-item img {
+    object-fit: cover; /* Recorta la imagen si es necesario (como background-size: cover) */
+  }
