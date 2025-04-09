@@ -1,18 +1,211 @@
-  /* Contenedor principal del carousel */
-  .carousel-container {
-    height: 40vh; /* Altura del 40% del viewport */
-    max-width: 1200px; /* Máximo ancho en pantallas grandes (ajustable) */
-    margin: 0 auto; /* Centrado horizontal */
-  }
-  /* Ajustes para el carousel y sus elementos internos */
-  .carousel-container .carousel,
-  .carousel-container .carousel-inner,
-  .carousel-container .carousel-item,
-  .carousel-container .carousel-item img {
-    height: 100%; /* Hereda la altura del contenedor */
-    width: 100%; /* Ocupa todo el ancho disponible */
-  }
-  /* Evita que las imágenes se deformen */
-  .carousel-container .carousel-item img {
-    object-fit: cover; /* Recorta la imagen si es necesario (como background-size: cover) */
-  }
+
+.mi-titulo {
+  text-align: center;
+  padding: 10;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Estilo básico para la tarjeta de personaje */
+.card {
+  width: 300px; /* Ancho de la tarjeta */
+  margin: 10px; /* Margen exterior */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 8px; /* Borde redondeado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  transition: transform 0.3s ease; /* Transición para animación al hacer hover */
+  position: relative;
+  background-color: white;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Efecto de levantamiento al hacer hover */
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px; /* Altura de la imagen */
+  object-fit: cover; /* Ajuste de la imagen */
+  border-top-left-radius: 8px; /* Redondeo de la esquina superior izquierda */
+  border-top-right-radius: 8px; /* Redondeo de la esquina superior derecha */
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.sticker {
+  position: absolute; /* Posición absoluta para el sticker */
+  top: 10px;
+  right: 10px;
+  width: 100px; /* Tamaño del sticker */
+  height: 100px;
+  z-index: 1; /* Z-index para estar encima de la tarjeta */
+}
+
+.btn-fav {
+  cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+  align-items: center; /* Alinear elementos verticalmente */
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.liked {
+  background: yellow;
+}
+.mi-titulo {
+    text-align: center;
+    padding: 10;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Estilo básico para la tarjeta de personaje */
+.card {
+    width: 300px; /* Ancho de la tarjeta */
+    margin: 10px; /* Margen exterior */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 8px; /* Borde redondeado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s ease; /* Transición para animación al hacer hover */
+    position: relative;
+    background-color: white;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto de levantamiento al hacer hover */
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Altura de la imagen */
+    object-fit: cover; /* Ajuste de la imagen */
+    border-top-left-radius: 8px; /* Redondeo de la esquina superior izquierda */
+    border-top-right-radius: 8px; /* Redondeo de la esquina superior derecha */
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.sticker {
+    position: absolute; /* Posición absoluta para el sticker */
+    top: 10px;
+    right: 10px;
+    width: 100px; /* Tamaño del sticker */
+    height: 100px;
+    z-index: 1; /* Z-index para estar encima de la tarjeta */
+}
+
+.btn-fav {
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    align-items: center; /* Alinear elementos verticalmente */
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.liked {
+    background: yellow;
+}
+.mi-titulo {
+    text-align: center;
+    padding: 10;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Estilo básico para la tarjeta de personaje */
+.card {
+    width: 300px; /* Ancho de la tarjeta */
+    margin: 10px; /* Margen exterior */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 8px; /* Borde redondeado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s ease; /* Transición para animación al hacer hover */
+    position: relative;
+    background-color: white;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto de levantamiento al hacer hover */
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Altura de la imagen */
+    object-fit: cover; /* Ajuste de la imagen */
+    border-top-left-radius: 8px; /* Redondeo de la esquina superior izquierda */
+    border-top-right-radius: 8px; /* Redondeo de la esquina superior derecha */
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.sticker {
+    position: absolute; /* Posición absoluta para el sticker */
+    top: 10px;
+    right: 10px;
+    width: 100px; /* Tamaño del sticker */
+    height: 100px;
+    z-index: 1; /* Z-index para estar encima de la tarjeta */
+}
+
+.btn-fav {
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    align-items: center; /* Alinear elementos verticalmente */
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.liked {
+    background: yellow;
+}

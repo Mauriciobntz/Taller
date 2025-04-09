@@ -6,10 +6,22 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        return view('header').view('navbar').view('footer');
+        $data['titulo']='Principal';
+        return view('header', $data).view('navbar').view('carousel').view('principal').view('footer');
     }
     public function somos(): string
     {
-        return view('header').view('navbar').view('quienes_somos').view('footer');
+        $data['titulo']='Quienes Somos';
+        return view('header', $data).view('navbar').view('quienes_somos').view('footer');
+    }
+    public function productos(): string
+    {
+        $data['titulo']='Productos';
+        return view('header', $data).view('navbar').view('productos').view('footer');
+    }
+    public function contacto(): string
+    {
+        $data['titulo']='Contacto';
+        return view('header', $data).view('navbar').view('contacto').view('footer');
     }
 }

@@ -11,7 +11,7 @@
       </button>
 
       <!-- Navbar Brand (centrado en todo momento, con flexbox) -->
-      <a class="navbar-brand text-white mx-auto" href="#" style="flex-grow: 1; text-align: center;">
+      <a class="navbar-brand text-white mx-auto" href="<?php echo base_url('principal'); ?>" style="flex-grow: 1; text-align: center;">
         <b>FOLLOW</b>
       </a>
 
@@ -21,12 +21,12 @@
         <a class="nav-link text-white fw-bold" href="<?php echo base_url('principal'); ?>">Principal</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white fw-bold" href="proyecto2/catalogo">Servicios</a>
+        <a class="nav-link text-white fw-bold" href="<?php echo base_url('productos'); ?>">Productos</a>
       </li>      <li class="nav-item">
         <a class="nav-link text-white fw-bold" href="<?php echo base_url('somos'); ?>">Quienes Somos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white fw-bold" href="proyecto2/consultas">Contacto</a>
+        <a class="nav-link text-white fw-bold" href="<?php echo base_url('contacto'); ?>">Contacto</a>
       </li>
     </ul>
 
